@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "EventPlanner",
+            "request": "launch",
+            "mainClass": "event_planner.EventPlanner",
+            "projectName": "Event_Planner_303f6d91"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "EventPlanner",
+            "request": "launch",
+            "mainClass": "EventPlanner",
+            "projectName": "Event_Planner_303f6d91",
+            "vmArgs": "--module-path '/Users/dev/Downloads/javafx-sdk-24.0.1 2/lib' --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
