@@ -8,6 +8,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
  
+
+// =============================
+// Main Class (View)
+// =============================
 public class EventPlanner extends Application {
     public static void main(String[] args) {
         launch(args);
@@ -16,7 +20,7 @@ public class EventPlanner extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         // title
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Event Planner!");
 
         // button
         Button btn = new Button();

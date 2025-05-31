@@ -32,8 +32,12 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.scene.Node;
 
+// =============================
+// Controller Class (Controller)
+// =============================
 public class Controller {
 
+    // import objects from fxml
     @FXML 
     private TextField tfName;
     @FXML 
@@ -47,9 +51,11 @@ public class Controller {
     @FXML
     private Polygon myUpArrow;
 
+    // create private variables
     private Scene scene;
     private static final ObservableList<Event> events = FXCollections.observableArrayList();
 
+    // switch between scnees
     public void switchToAdd(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
         Parent root = loader.load();
@@ -72,10 +78,13 @@ public class Controller {
         stage.show();
     }
 
+    // add event info when button is clicked
     public void addToList() {
+        // create new event
         Event newEvent = new Event(tfName.getText(), tfDesc.getText(), tfDate.getValue());
         events.add(newEvent);
 
+        // transitions
         FadeTransition fadeIn = new FadeTransition(Duration.millis(300), myUpArrow);
         fadeIn.setFromValue(0);
         fadeIn.setToValue(100);
@@ -91,6 +100,7 @@ public class Controller {
         sequence.play();
     }
 
+    // create new card based on event info
     public void onBtnClick() {
         for (Event event : events) {
             // card (StackPane)

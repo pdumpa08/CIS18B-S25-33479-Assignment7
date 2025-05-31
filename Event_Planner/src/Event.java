@@ -5,6 +5,9 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+// =============================
+// Event Class (Model)
+// =============================
 public class Event {
     private final StringProperty eventTitle;
     private final StringProperty eventDesc;
